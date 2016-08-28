@@ -53,7 +53,9 @@ module.exports = function(grunt, target) {
       done = grunt.task.current.async();
 
       // Set PORT for new processes
-      process.env.PORT = options.port;
+      if (options.port) {
+        process.env.PORT = options.port;
+      }
 
       // Set NODE_ENV for new processes
       if (options.node_env) {

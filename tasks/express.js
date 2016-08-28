@@ -29,7 +29,7 @@ module.exports = function(grunt) {
       harmony:          false,
       background:       true,
       fallback:         function() { /* Prevent EADDRINUSE from breaking Grunt */ },
-      port:             process.env.PORT || 3000,
+      port:             undefined,
       delay:            0,
       output:           ".+",
       debug:            false,
